@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участник 2 - Разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .participant2-content {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bio {
+            flex: 2;
+        }
+
+        .contact {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .projects {
+            margin-top: 2rem;
+        }
+
+        .project-item {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="participant1.html">Участник 1</a></li>
+            <li><a href="participant2.html">Участник 2</a></li>
+            <li><a href="participant3.html">Участник 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Страница Участника 2</h1>
+        <div class="profile">
+            <h2>Frontend Разработчик</h2>
+            <div class="participant2-content">
+                <div class="bio">
+                    <p>Ответственный за разработку клиентской части веб-приложений.</p>
+                    <p>Опыт работы с современными фреймворками и библиотеками.</p>
+                </div>
+                <div class="contact">
+                    <h3>Контакты:</h3>
+                    <p>Email: participant2@example.com</p>
+                    <p>GitHub: github.com/participant2</p>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Проекты:</h3>
+                <div class="project-item">
+                    <h4>Интернет-магазин</h4>
+                    <p>Полностью адаптивный интерфейс на React</p>
+                </div>
+                <div class="project-item">
+                    <h4>Панель администратора</h4>
+                    <p>Dashboard с графиками и статистикой</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Простой JS для демонстрации
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectItems = document.querySelectorAll('.project-item');
+            projectItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    this.style.backgroundColor = '#f0f8ff';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
